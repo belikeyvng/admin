@@ -1,0 +1,63 @@
+
+    * {
+      font-family: "Inter", Arial !important;
+      outline: none !important;
+    }
+
+    button:active,
+    .pointer:active {
+      opacity: 0.6;
+    }
+    p, h1 {
+      margin: 0;
+      padding: 0;
+    }
+
+    .custom-text  {
+      font-size: max(1vw,13px);
+      white-space: nowrap;
+    }
+
+    .custom-text-sm {
+      font-size: max(.9vw,13px);
+      white-space: nowrap;
+    }
+    
+    .pfp {
+      width: 34px;
+      height: 34px;
+      margin-right: -8px;
+    }
+
+     .pfp-l {
+        width: 40px;
+        height: 40px;
+     }
+     
+    .gallery::-webkit-scrollbar,
+    .offcanvas-gallery::-webkit-scrollbar,
+    .offcanvas-details::-webkit-scrollbar {
+      width: 0;
+      height: 0;
+    } 
+    
+    .gallery-item {
+      width: 250px;
+      height: 120px;
+      min-width: 250px;
+    }
+
+    .pointer {
+      cursor: pointer;
+    }
+
+    .navbar-toggler:focus,
+    .navbar-toggler {
+      border: none;
+        outline: none; 
+        box-shadow: none; 
+    }
+
+
+
+    

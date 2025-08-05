@@ -1,0 +1,747 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interest and Inspections</title>
+  <meta name="description" content="EstateIQ - Interest and Inspections Page">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+  <link rel="shortcut icon" href="./assets/images/Synergy.svg" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  
+</head>
+<body>
+  
+  
+  <main class="container-fluid p-0 pt-5 my-2">
+       <nav class="navbar navbar-expand-lg  bg-white py-3 px-4  border-bottom border-1 position-fixed top-0 start-0 end-0 z-2 custom-text ">
+          <div class="container-fluid">
+            <a class="navbar-brand me-4" href="#"><img src="./assets/images/Synergy.svg" alt="Logo" ></a>
+            <button class="navbar-toggler border-0 " type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0 column-gap-2">
+                
+                <li class="nav-item">
+                  <a class="nav-link active d-flex align-items-center column-gap-2 text-secondary" aria-current="page" href="#">
+                    <svg width="23" height="23" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M16.75 3.25C16.9489 3.25 17.1397 3.32902 17.2803 3.46967C17.421 3.61032 17.5 3.80109 17.5 4V16C17.5 16.1989 17.421 16.3897 17.2803 16.5303C17.1397 16.671 16.9489 16.75 16.75 16.75H3.25C3.05109 16.75 2.86032 16.671 2.71967 16.5303C2.57902 16.3897 2.5 16.1989 2.5 16V4C2.5 3.80109 2.57902 3.61032 2.71967 3.46967C2.86032 3.32902 3.05109 3.25 3.25 3.25H16.75ZM9.25 10.75H4V15.25H9.25V10.75ZM16 10.75H10.75V15.25H16V10.75ZM9.25 4.75H4V9.25H9.25V4.75ZM16 4.75H10.75V9.25H16V4.75Z" fill="#5C5C5C" style="fill:#5C5C5C;fill:color(display-p3 0.3608 0.3608 0.3608);fill-opacity:1;"/>
+                      </svg>
+
+                      Dashboard
+                  </a>
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link active d-flex align-items-center column-gap-2 text-secondary" aria-current="page" href="#">
+                              <svg width="23" height="23" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M5.5 6.25V4C5.5 3.80109 5.57902 3.61032 5.71967 3.46967C5.86032 3.32902 6.05109 3.25 6.25 3.25H11.0605L12.5605 4.75H16.75C16.9489 4.75 17.1397 4.82902 17.2803 4.96967C17.421 5.11032 17.5 5.30109 17.5 5.5V13C17.5 13.1989 17.421 13.3897 17.2803 13.5303C17.1397 13.671 16.9489 13.75 16.75 13.75H14.5V16C14.5 16.1989 14.421 16.3897 14.2803 16.5303C14.1397 16.671 13.9489 16.75 13.75 16.75H3.25C3.05109 16.75 2.86032 16.671 2.71967 16.5303C2.57902 16.3897 2.5 16.1989 2.5 16V7C2.5 6.80109 2.57902 6.61032 2.71967 6.46967C2.86032 6.32902 3.05109 6.25 3.25 6.25H5.5ZM5.5 7.75H4V15.25H13V13.75H5.5V7.75ZM7 4.75V12.25H16V6.25H11.9395L10.4395 4.75H7Z" fill="#5C5C5C" style="fill:#5C5C5C;fill:color(display-p3 0.3608 0.3608 0.3608);fill-opacity:1;"/>
+                  </svg>
+
+
+                      Properties
+                  </a>
+                </li>
+                
+                <li class="nav-item">
+                  <a class="nav-link active d-flex align-items-center column-gap-2 text-secondary" aria-current="page" href="#">
+                              <svg width="23" height="23" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M13.75 3.25H16.75C16.9489 3.25 17.1397 3.32902 17.2803 3.46967C17.421 3.61032 17.5 3.80109 17.5 4V16C17.5 16.1989 17.421 16.3897 17.2803 16.5303C17.1397 16.671 16.9489 16.75 16.75 16.75H3.25C3.05109 16.75 2.86032 16.671 2.71967 16.5303C2.57902 16.3897 2.5 16.1989 2.5 16V4C2.5 3.80109 2.57902 3.61032 2.71967 3.46967C2.86032 3.32902 3.05109 3.25 3.25 3.25H6.25V1.75H7.75V3.25H12.25V1.75H13.75V3.25ZM12.25 4.75H7.75V6.25H6.25V4.75H4V7.75H16V4.75H13.75V6.25H12.25V4.75ZM16 9.25H4V15.25H16V9.25Z" fill="#5C5C5C" style="fill:#5C5C5C;fill:color(display-p3 0.3608 0.3608 0.3608);fill-opacity:1;"/>
+                              </svg>
+
+
+
+                      Finance
+                  </a>
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link active d-flex align-items-center column-gap-2 text-primary rounded-4 bg-primary" aria-current="page" href="#" style="--bs-bg-opacity: .14;">
+                      <svg width="23" height="23" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M2.5 17.5C2.5 15.9087 3.13214 14.3826 4.25736 13.2574C5.38258 12.1321 6.9087 11.5 8.5 11.5C10.0913 11.5 11.6174 12.1321 12.7426 13.2574C13.8679 14.3826 14.5 15.9087 14.5 17.5H13C13 16.3065 12.5259 15.1619 11.682 14.318C10.8381 13.4741 9.69347 13 8.5 13C7.30653 13 6.16193 13.4741 5.31802 14.318C4.47411 15.1619 4 16.3065 4 17.5H2.5ZM8.5 10.75C6.01375 10.75 4 8.73625 4 6.25C4 3.76375 6.01375 1.75 8.5 1.75C10.9862 1.75 13 3.76375 13 6.25C13 8.73625 10.9862 10.75 8.5 10.75ZM8.5 9.25C10.1575 9.25 11.5 7.9075 11.5 6.25C11.5 4.5925 10.1575 3.25 8.5 3.25C6.8425 3.25 5.5 4.5925 5.5 6.25C5.5 7.9075 6.8425 9.25 8.5 9.25ZM14.713 12.0273C15.767 12.5019 16.6615 13.2709 17.2889 14.2418C17.9164 15.2126 18.2501 16.344 18.25 17.5H16.75C16.7502 16.633 16.4999 15.7844 16.0293 15.0562C15.5587 14.328 14.8878 13.7512 14.0972 13.3953L14.7123 12.0273H14.713ZM14.197 3.55975C14.9526 3.87122 15.5987 4.40015 16.0533 5.07942C16.5078 5.75869 16.7503 6.55768 16.75 7.375C16.7503 8.40425 16.3658 9.39642 15.6719 10.1566C14.978 10.9168 14.025 11.3901 13 11.4835V9.97375C13.5557 9.89416 14.0713 9.63851 14.471 9.24434C14.8707 8.85017 15.1335 8.33824 15.2209 7.7837C15.3082 7.22916 15.2155 6.66122 14.9563 6.16327C14.6971 5.66531 14.2851 5.26356 13.7808 5.017L14.197 3.55975Z" fill="#335CFF" style="fill:#335CFF;fill:color(display-p3 0.2000 0.3609 1.0000);fill-opacity:1;"/>
+                      </svg>
+
+
+
+
+                      Interest & applications
+                  </a>
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link active d-flex align-items-center column-gap-2 text-secondary" aria-current="page" href="#">
+                      <svg width="23" height="23" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M7.51447 4.00004L9.46972 2.04479C9.61037 1.90418 9.8011 1.8252 9.99997 1.8252C10.1988 1.8252 10.3896 1.90418 10.5302 2.04479L12.4855 4.00004H15.25C15.4489 4.00004 15.6397 4.07905 15.7803 4.21971C15.921 4.36036 16 4.55112 16 4.75004V7.51453L17.9552 9.46979C18.0958 9.61043 18.1748 9.80116 18.1748 10C18.1748 10.1989 18.0958 10.3896 17.9552 10.5303L16 12.4855V15.25C16 15.4489 15.921 15.6397 15.7803 15.7804C15.6397 15.921 15.4489 16 15.25 16H12.4855L10.5302 17.9553C10.3896 18.0959 10.1988 18.1749 9.99997 18.1749C9.8011 18.1749 9.61037 18.0959 9.46972 17.9553L7.51447 16H4.74997C4.55106 16 4.3603 15.921 4.21964 15.7804C4.07899 15.6397 3.99997 15.4489 3.99997 15.25V12.4855L2.04472 10.5303C1.90412 10.3896 1.82513 10.1989 1.82513 10C1.82513 9.80116 1.90412 9.61043 2.04472 9.46979L3.99997 7.51453V4.75004C3.99997 4.55112 4.07899 4.36036 4.21964 4.21971C4.3603 4.07905 4.55106 4.00004 4.74997 4.00004H7.51447ZM5.49997 5.50003V8.13629L3.63622 10L5.49997 11.8638V14.5H8.13622L9.99997 16.3638L11.8637 14.5H14.5V11.8638L16.3637 10L14.5 8.13629V5.50003H11.8637L9.99997 3.63629L8.13622 5.50003H5.49997ZM9.99997 13C9.20432 13 8.44126 12.684 7.87865 12.1214C7.31604 11.5587 6.99997 10.7957 6.99997 10C6.99997 9.20438 7.31604 8.44132 7.87865 7.87871C8.44126 7.31611 9.20432 7.00003 9.99997 7.00003C10.7956 7.00003 11.5587 7.31611 12.1213 7.87871C12.6839 8.44132 13 9.20438 13 10C13 10.7957 12.6839 11.5587 12.1213 12.1214C11.5587 12.684 10.7956 13 9.99997 13ZM9.99997 11.5C10.3978 11.5 10.7793 11.342 11.0606 11.0607C11.3419 10.7794 11.5 10.3979 11.5 10C11.5 9.60221 11.3419 9.22068 11.0606 8.93937C10.7793 8.65807 10.3978 8.50003 9.99997 8.50003C9.60215 8.50003 9.22062 8.65807 8.93931 8.93937C8.65801 9.22068 8.49997 9.60221 8.49997 10C8.49997 10.3979 8.65801 10.7794 8.93931 11.0607C9.22062 11.342 9.60215 11.5 9.99997 11.5Z" fill="#5C5C5C" style="fill:#5C5C5C;fill:color(display-p3 0.3608 0.3608 0.3608);fill-opacity:1;"/>
+                    </svg>
+
+
+
+                      Settings
+                  </a>
+                </li>
+
+                <li class="nav-item dropdown ">
+                  <a class="nav-link dropdown-toggle d-flex align-items-center column-gap-2  " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      <svg width="23" height="23" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M5.875 9.625C5.43179 9.625 4.99292 9.5377 4.58344 9.36809C4.17397 9.19848 3.80191 8.94988 3.48851 8.63649C3.17512 8.32309 2.92652 7.95103 2.75691 7.54156C2.5873 7.13208 2.5 6.69321 2.5 6.25C2.5 5.80679 2.5873 5.36792 2.75691 4.95844C2.92652 4.54897 3.17512 4.17691 3.48851 3.86351C3.80191 3.55012 4.17397 3.30152 4.58344 3.13191C4.99292 2.9623 5.43179 2.875 5.875 2.875C6.77011 2.875 7.62855 3.23058 8.26149 3.86351C8.89442 4.49645 9.25 5.35489 9.25 6.25C9.25 7.14511 8.89442 8.00355 8.26149 8.63649C7.62855 9.26942 6.77011 9.625 5.875 9.625ZM6.25 17.125C5.35489 17.125 4.49645 16.7694 3.86351 16.1365C3.23058 15.5035 2.875 14.6451 2.875 13.75C2.875 12.8549 3.23058 11.9965 3.86351 11.3635C4.49645 10.7306 5.35489 10.375 6.25 10.375C7.14511 10.375 8.00355 10.7306 8.63649 11.3635C9.26942 11.9965 9.625 12.8549 9.625 13.75C9.625 14.6451 9.26942 15.5035 8.63649 16.1365C8.00355 16.7694 7.14511 17.125 6.25 17.125ZM13.75 9.625C13.3068 9.625 12.8679 9.5377 12.4584 9.36809C12.049 9.19848 11.6769 8.94988 11.3635 8.63649C11.0501 8.32309 10.8015 7.95103 10.6319 7.54156C10.4623 7.13208 10.375 6.69321 10.375 6.25C10.375 5.80679 10.4623 5.36792 10.6319 4.95844C10.8015 4.54897 11.0501 4.17691 11.3635 3.86351C11.6769 3.55012 12.049 3.30152 12.4584 3.13191C12.8679 2.9623 13.3068 2.875 13.75 2.875C14.6451 2.875 15.5035 3.23058 16.1365 3.86351C16.7694 4.49645 17.125 5.35489 17.125 6.25C17.125 7.14511 16.7694 8.00355 16.1365 8.63649C15.5035 9.26942 14.6451 9.625 13.75 9.625ZM13.75 17.125C12.8549 17.125 11.9965 16.7694 11.3635 16.1365C10.7306 15.5035 10.375 14.6451 10.375 13.75C10.375 12.8549 10.7306 11.9965 11.3635 11.3635C11.9965 10.7306 12.8549 10.375 13.75 10.375C14.6451 10.375 15.5035 10.7306 16.1365 11.3635C16.7694 11.9965 17.125 12.8549 17.125 13.75C17.125 14.6451 16.7694 15.5035 16.1365 16.1365C15.5035 16.7694 14.6451 17.125 13.75 17.125ZM5.875 8.125C6.37228 8.125 6.84919 7.92746 7.20083 7.57583C7.55246 7.22419 7.75 6.74728 7.75 6.25C7.75 5.75272 7.55246 5.27581 7.20083 4.92417C6.84919 4.57254 6.37228 4.375 5.875 4.375C5.37772 4.375 4.90081 4.57254 4.54917 4.92417C4.19754 5.27581 4 5.75272 4 6.25C4 6.74728 4.19754 7.22419 4.54917 7.57583C4.90081 7.92746 5.37772 8.125 5.875 8.125ZM6.25 15.625C6.74728 15.625 7.22419 15.4275 7.57583 15.0758C7.92746 14.7242 8.125 14.2473 8.125 13.75C8.125 13.2527 7.92746 12.7758 7.57583 12.4242C7.22419 12.0725 6.74728 11.875 6.25 11.875C5.75272 11.875 5.27581 12.0725 4.92417 12.4242C4.57254 12.7758 4.375 13.2527 4.375 13.75C4.375 14.2473 4.57254 14.7242 4.92417 15.0758C5.27581 15.4275 5.75272 15.625 6.25 15.625ZM13.75 8.125C14.2473 8.125 14.7242 7.92746 15.0758 7.57583C15.4275 7.22419 15.625 6.74728 15.625 6.25C15.625 5.75272 15.4275 5.27581 15.0758 4.92417C14.7242 4.57254 14.2473 4.375 13.75 4.375C13.2527 4.375 12.7758 4.57254 12.4242 4.92417C12.0725 5.27581 11.875 5.75272 11.875 6.25C11.875 6.74728 12.0725 7.22419 12.4242 7.57583C12.7758 7.92746 13.2527 8.125 13.75 8.125ZM13.75 15.625C14.2473 15.625 14.7242 15.4275 15.0758 15.0758C15.4275 14.7242 15.625 14.2473 15.625 13.75C15.625 13.2527 15.4275 12.7758 15.0758 12.4242C14.7242 12.0725 14.2473 11.875 13.75 11.875C13.2527 11.875 12.7758 12.0725 12.4242 12.4242C12.0725 12.7758 11.875 13.2527 11.875 13.75C11.875 14.2473 12.0725 14.7242 12.4242 15.0758C12.7758 15.4275 13.2527 15.625 13.75 15.625Z" fill="#5C5C5C" style="fill:#5C5C5C;fill:color(display-p3 0.3608 0.3608 0.3608);fill-opacity:1;"/>
+                        </svg>
+
+
+
+                      Others
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  </ul>
+                </li>
+                
+                
+              </ul>
+
+              <div class="d-flex align-items-center column-gap-3">
+                  <div class="nav-item">
+                  <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M16 13.75H17.5V15.25H2.5V13.75H4V8.5C4 6.9087 4.63214 5.38258 5.75736 4.25736C6.88258 3.13214 8.4087 2.5 10 2.5C11.5913 2.5 13.1174 3.13214 14.2426 4.25736C15.3679 5.38258 16 6.9087 16 8.5V13.75ZM14.5 13.75V8.5C14.5 7.30653 14.0259 6.16193 13.182 5.31802C12.3381 4.47411 11.1935 4 10 4C8.80653 4 7.66193 4.47411 6.81802 5.31802C5.97411 6.16193 5.5 7.30653 5.5 8.5V13.75H14.5ZM7.75 16.75H12.25V18.25H7.75V16.75Z" fill="#5C5C5C" style="fill:#5C5C5C;fill:color(display-p3 0.3608 0.3608 0.3608);fill-opacity:1;"/>
+                  </svg>
+
+                  </div>
+
+                  <div class="nav-item dropdown ">
+                    <a class="nav-link dropdown-toggle d-flex align-items-center column-gap-2   " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      <div class="rounded-5 bg-primary d-flex align-items-center justify-content-center p-2 text-white fw-medium">
+                        JD
+                      </div>
+
+
+
+                        Joe Doe
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                </li>
+                  </div>                
+              </div>
+          </div>
+      </nav>
+
+    <section class=" h-100 px-4 my-4 main-area">
+       <div class="d-flex  justify-content-between align-items-center px-2 flex-wrap border-bottom border-1 py-5 row-gap-4">
+          <div>
+              <h1 class="fs-3 fw-semibold py-1">
+              Interest and Inspections
+            </h1>
+            <p class="text-secondary fs-6">
+              See people who are interested in your property
+            </p>
+          </div>
+
+          
+        <div>
+          
+          <div>
+            <p class="fw-medium text-secondary">Residents</p>
+          </div>
+
+          <div class="d-flex align-items-center justify-content-between column-gap-2">
+            <div class="fs-3 fw-medium">
+              <p>86</p>
+            </div>
+            <div>
+             <p class="fw-medium text-secondary">
+               <span class="text-success">+2%</span> vs last year
+             </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class=" py-4 d-flex justify-content-between align-items-center px-2 flex-wrap column-gap-4 row-gap-4 border-bottom border-1">
+         <div class="  border-end border-1  flex-fill">
+          
+            <div>
+              <p class="fw-normal fs-6 text-secondary-emphasis">Total inspections</p>
+            </div>
+
+            <div class="d-flex align-items-center justify-content-start column-gap-2">
+              <div class="fs-3 fw-medium">
+                <p>205</p>
+              </div>
+              <div>
+              <p class="fw-medium text-secondary">
+                <span class="text-success">+12</span> this quarter
+              </p>
+              </div>
+            </div>
+          </div>
+
+          <div class=" border-end border-1   flex-fill">
+          
+            <div>
+              <p class="fw-normal fs-6 text-secondary-emphasis">Total inspections</p>
+            </div>
+
+            <div class="d-flex align-items-center justify-content-start column-gap-2">
+              <div class="fs-3 fw-medium">
+                <p>205</p>
+              </div>
+              <div>
+              <p class="fw-medium text-secondary">
+                <span class="text-success">+12</span> this quarter
+              </p>
+              </div>
+            </div>
+          </div>
+
+          <div class=" border-end border-1  flex-fill">
+          
+            <div>
+              <p class="fw-normal fs-6 text-secondary-emphasis">Total inspections</p>
+            </div>
+
+            <div class="d-flex align-items-center justify-content-start column-gap-2">
+              <div class="fs-3 fw-medium">
+                <p>205</p>
+              </div>
+              <div>
+              <p class="fw-medium text-secondary">
+                <span class="text-success">+12</span> this quarter
+              </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="   flex-fill">
+            <div class="d-flex align-items-center justify-content-center flex-wrap column-gap-3 row-gap-3">
+                <div class="flex-fill">
+                  <input type="text" class="form-control w-100 bg-secondary border-0 py-3 custom-text-sm" placeholder="Search"  style="--bs-bg-opacity: .07;">
+                </div>
+
+                <div class="d-flex align-items-center justify-content-center column-gap-3 row-gap-3">
+                    
+                <!-- <select name="Filter" id="filter" class="border-0 bg-secondary rounded-4 py-3 px-2 text-secondary fw-medium custom-text-sm" style="--bs-bg-opacity: .07; appearance: none;" >
+                  <option value="" selected>Newest</option>
+                  <option value="">Anot</option>
+                </select> -->
+
+                <div class="dropdown">
+                  <button
+                    class=" dropdown-toggle border-0 bg-secondary rounded-4 py-3 px-2 text-secondary fw-medium custom-text-sm " 
+                    style="--bs-bg-opacity: .07; appearance: none;"
+                    type="button"
+                    id="triggerId"
+                    data-bs-toggle="dropdown"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                  >
+                   Newest
+                  </button>
+                  <div class="dropdown-menu" aria-labelledby="triggerId">
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item disabled" href="#">Disabled action</a>
+                    <h6 class="dropdown-header">Section header</h6>
+                    <a class="dropdown-item" href="#">Action</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">After divider action</a>
+                  </div>
+                </div>
+                
+
+                <button class="btn text-secondary bg-secondary border-0 fw-medium custom-text-sm p-3 column-gap-2 rounded-4 d-flex align-items-center" style="--bs-bg-opacity: .07;">
+                  <img src="./assets/icons/filter.svg" alt="filter icon">
+                  Filter
+                </button>
+                </div>
+            </div>
+          </div>
+      </div>
+
+      <div class="d-flex justify-content-start align-items-center px-2 px-sm-0 px-md-0 border-bottom border-1 column-gap-3 flex-wrap ">
+          <div class="d-flex justify-content-start align-items-center column-gap-2  border-bottom border-primary border-3 h-100 py-3 text-primary custom-text  flex-grow-0 pointer js-inspection-option land-option">
+              <svg width="23" height="23" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M16.75 3.25C16.9489 3.25 17.1397 3.32902 17.2803 3.46967C17.421 3.61032 17.5 3.80109 17.5 4V16C17.5 16.1989 17.421 16.3897 17.2803 16.5303C17.1397 16.671 16.9489 16.75 16.75 16.75H3.25C3.05109 16.75 2.86032 16.671 2.71967 16.5303C2.57902 16.3897 2.5 16.1989 2.5 16V4C2.5 3.80109 2.57902 3.61032 2.71967 3.46967C2.86032 3.32902 3.05109 3.25 3.25 3.25H16.75ZM9.25 10.75H4V15.25H9.25V10.75ZM16 10.75H10.75V15.25H16V10.75ZM9.25 4.75H4V9.25H9.25V4.75ZM16 4.75H10.75V9.25H16V4.75Z" fill="#335CFF" />
+              </ svg>
+                      <p>Land Inspections</p>
+          </div>
+          
+
+          <div class="d-flex justify-content-start align-items-center column-gap-2 py-3 custom-text pointer js-inspection-option house-option">
+              <svg width="23" height="23" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M11.5 17.875L9.4 15.25H5.5C5.30109 15.25 5.11032 15.171 4.96967 15.0303C4.82902 14.8897 4.75 14.6989 4.75 14.5V6.32725C4.75 6.12834 4.82902 5.93757 4.96967 5.79692C5.11032 5.65627 5.30109 5.57725 5.5 5.57725H17.5C17.6989 5.57725 17.8897 5.65627 18.0303 5.79692C18.171 5.93757 18.25 6.12834 18.25 6.32725V14.5C18.25 14.6989 18.171 14.8897 18.0303 15.0303C17.8897 15.171 17.6989 15.25 17.5 15.25H13.6L11.5 17.875ZM12.8792 13.75H16.75V7.07725H6.25V13.75H10.1208L11.5 15.4735L12.8792 13.75ZM2.5 2.5H15.25V4H3.25V12.25H1.75V3.25C1.75 3.05109 1.82902 2.86032 1.96967 2.71967C2.11032 2.57902 2.30109 2.5 2.5 2.5Z" fill="#5C5C5C" />
+              </ svg>
+
+
+                      <p>House Inspections</p>
+          </div>
+      </div>
+
+      <div class=" px-2 py-4">
+       <div class="row row-gap-4 js-inspection-box">
+
+          <div class="col-12 col-xxl-3 col-xl-4 col-lg-4 col-md-6 col-sm-12 item pointer">
+            <div class="card bg-secondary border-0" style="--bs-bg-opacity:0.07;">
+              <div class="card-body">
+                <div class="d-flex justify-content-between align-items-center">
+                  <h3 class=" fs-6 ">Eneka Land Inspection</h3>
+
+                  <div class="bg-white rounded-5 p-1 d-flex justify-content-center align-items-center" style="width: 25px; height:25px;">
+                    <img src="./assets/icons/Vector.svg" alt="" width="13px" height="13px">
+                  </div>
+
+                </div>
+
+                <div class="mb-3">
+                  <p class="text-secondary custom-text">9:00 - May 2nd, 2025</p>
+                </div>
+
+
+                <div class="bg-white d-flex align-items-center justify-content-between p-1 px-2 rounded-5 w-50 mb-2" >
+                    <div class="d-flex align-items-center">
+                      <div class="rounded-5 bg-primary border border-2 border-white pfp d-flex align-items-center justify-content-center text-white" >A</div>
+                      <div class="rounded-5 bg-primary border border-2 border-white pfp  text-white d-flex align-items-center justify-content-center">B</div>
+                      <div class="rounded-5 bg-primary border border-2 border-white pfp  text-white d-flex align-items-center justify-content-center">C</div>
+                    </div>
+
+                    <div class="mx-1"> +4</div>
+                </div>
+
+                <div class="d-flex align-items-center justify-content-between">
+                    <div class="custom-text-sm">
+                      On-site inspection
+                    </div>
+
+                    <div class="fw-semibold rounded-4 p-1 px-2 custom-text-sm text-danger bg-danger-subtle">
+                      Land
+                    </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-xxl-3 col-xl-4 col-lg-4 col-md-6 col-sm-12 pointer">
+            <div class="card bg-secondary border-0" style="--bs-bg-opacity:0.07;">
+              <div class="card-body">
+                <div class="d-flex justify-content-between align-items-center">
+                  <h3 class=" fs-6 ">Eneka Land Inspection</h3>
+
+                  <div class="bg-white rounded-5 p-1 d-flex justify-content-center align-items-center" style="width: 25px; height:25px;">
+                    <img src="./assets/icons/Vector.svg" alt="" width="13px" height="13px">
+                  </div>
+
+                </div>
+
+                <div class="mb-3">
+                  <p class="text-secondary custom-text">9:00 - May 2nd, 2025</p>
+                </div>
+
+
+                <div class="bg-white d-flex align-items-center justify-content-between p-1 px-2 rounded-5 w-50 mb-2" >
+                    <div class="d-flex align-items-center">
+                      <div class="rounded-5 bg-primary border border-2 border-white pfp d-flex align-items-center justify-content-center text-white" >A</div>
+                      <div class="rounded-5 bg-primary border border-2 border-white pfp  text-white d-flex align-items-center justify-content-center">B</div>
+                      <div class="rounded-5 bg-primary border border-2 border-white pfp  text-white d-flex align-items-center justify-content-center">C</div>
+                    </div>
+
+                    <div class="mx-1"> +4</div>
+                </div>
+
+                <div class="d-flex align-items-center justify-content-between">
+                    <div class="custom-text-sm">
+                      On-site inspection
+                    </div>
+
+                    <div class="fw-semibold rounded-4 p-1 px-2 custom-text-sm text-danger bg-danger-subtle">
+                      Land
+                    </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-xxl-3 col-xl-4 col-lg-4 col-md-6 col-sm-12 pointer">
+            <div class="card bg-secondary border-0" style="--bs-bg-opacity:0.07;">
+              <div class="card-body">
+                <div class="d-flex justify-content-between align-items-center">
+                  <h3 class=" fs-6 ">Eneka Land Inspection</h3>
+
+                 <div class="bg-white rounded-5 p-1 d-flex justify-content-center align-items-center" style="width: 25px; height:25px;">
+                    <img src="./assets/icons/Vector.svg" alt="" width="13px" height="13px">
+                  </div>
+
+                </div>
+
+                <div class="mb-3">
+                  <p class="text-secondary custom-text">9:00 - May 2nd, 2025</p>
+                </div>
+
+
+                <div class="bg-white d-flex align-items-center justify-content-between p-1 px-2 rounded-5 w-50 mb-2" >
+                    <div class="d-flex align-items-center">
+                      <div class="rounded-5 bg-primary border border-2 border-white pfp d-flex align-items-center justify-content-center text-white" >A</div>
+                      <div class="rounded-5 bg-primary border border-2 border-white pfp  text-white d-flex align-items-center justify-content-center">B</div>
+                      <div class="rounded-5 bg-primary border border-2 border-white pfp  text-white d-flex align-items-center justify-content-center">C</div>
+                    </div>
+
+                    <div class="mx-1"> +4</div>
+                </div>
+
+                <div class="d-flex align-items-center justify-content-between">
+                    <div class="custom-text-sm">
+                      On-site inspection
+                    </div>
+
+                    <div class="fw-semibold rounded-4 p-1 px-2 custom-text-sm text-primary bg-primary-subtle">
+                      House
+                    </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-xxl-3 col-xl-4 col-lg-4 col-md-6 col-sm-12 pointer">
+            <div class="card bg-secondary border-0" style="--bs-bg-opacity:0.07;">
+              <div class="card-body">
+                <div class="d-flex justify-content-between align-items-center">
+                  <h3 class=" fs-6 ">Eneka Land Inspection</h3>
+
+                 <div class="bg-white rounded-5 p-1 d-flex justify-content-center align-items-center" style="width: 25px; height:25px;">
+                    <img src="./assets/icons/Vector.svg" alt="" width="13px" height="13px">
+                  </div>
+
+                </div>
+
+                <div class="mb-3">
+                  <p class="text-secondary custom-text">9:00 - May 2nd, 2025</p>
+                </div>
+
+
+                <div class="bg-white d-flex align-items-center justify-content-between p-1 px-2 rounded-5 w-50 mb-2" >
+                    <div class="d-flex align-items-center">
+                      <div class="rounded-5 bg-primary border border-2 border-white pfp d-flex align-items-center justify-content-center text-white" >A</div>
+                      <div class="rounded-5 bg-primary border border-2 border-white pfp  text-white d-flex align-items-center justify-content-center">B</div>
+                      <div class="rounded-5 bg-primary border border-2 border-white pfp  text-white d-flex align-items-center justify-content-center">C</div>
+                    </div>
+
+                    <div class="mx-1"> +4</div>
+                </div>
+
+                <div class="d-flex align-items-center justify-content-between">
+                    <div class="custom-text-sm">
+                      On-site inspection
+                    </div>
+
+                    <div class="fw-semibold rounded-4 p-1 px-2 custom-text-sm text-primary bg-primary-subtle">
+                      House
+                    </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          
+
+
+       
+          
+
+         
+       </div>
+       
+         
+      </div>
+
+      <!-- House Inspection - ITEM -->
+      <!-- <div class="col-12 col-xxl-3 col-xl-4 col-lg-4 col-md-6 col-sm-12 pointer" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+            <div class="card bg-secondary border-0" style="--bs-bg-opacity:0.07;">
+              <div class="card-body">
+                <div class="d-flex justify-content-start align-items-center mb-3 ">
+                  <div class="pfp-l bg-success rounded-5"></div>
+                </div>
+
+                <div class="d-flex justify-content-between align-items-center">
+                  <h3 class=" fs-6 ">${item.inspectionName}</h3>
+
+                 
+                </div>
+
+                
+
+                <div class="mb-3">
+                  <p class="text-secondary custom-text">${item.inspectionDate}</p>
+                </div>
+
+
+
+                <div class="d-flex align-items-center justify-content-between">
+                    <div class="custom-text-sm">
+                      ${item.inspectionLocation}
+                    </div>
+
+                    <div class="fw-semibold rounded-4 p-1 px-2 custom-text-sm text-danger bg-danger-subtle">
+                      Apartment
+                    </div>
+                </div>
+              </div>
+            </div>
+        </div> -->
+
+      
+    </section>
+
+    <!-- <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight" >Toggle right offcanvas</button> -->
+
+      
+
+      <div class="offcanvas offcanvas-end  " tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+        <div class="w-100 p-4 border-bottom border-1">
+          <div class="offcanvas-header p-0 mb-1">
+          <div class="d-flex justify-content-between align-items-center w-100">
+            <h5 class="offcanvas-title fw-semibold" id="offcanvasRightLabel">3 Bedroom Apartment</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+ 
+          </div>
+
+          <div class="mb-3">
+              <p class="custom-text text-secondary fw-medium">Filled interest/KYC form on April 26th, 2025</p>
+
+          </div>
+
+          <div class="d-flex justify-content-start p-1 px-2 column-gap-2 align-items-center rounded-3 bg-primary " style="--bs-bg-opacity:.07; width: 200px;">
+                <img src="./assets/icons/info.svg" alt="info-icon" width="17px">
+
+                <div class="text-primary custom-text">
+                  Status: House Available
+                </div>
+          </div>
+        </div>
+        
+        <div class="offcanvas-body p-0">
+          <div class="border-bottom border-1 d-flex align-items-center justify-content-between px-4 ">
+            <div class="p-3 text-center flex-fill  fw-normal  custom-text pointer js-offcanvas-opt js-house-details-opt">House Details</div>
+            <div class="p-3 flex-fill  text-center custom-text fw-medium pointer border-bottom border-primary border-3 js-offcanvas-opt js-kyc-details-opt"> KYC Details</div>
+          </div>
+
+          
+
+
+          <div class="offcanvas-container ">
+              <div>
+                  <div class="custom-text-sm text-secondary bg-secondary px-4 py-1 fw-medium my-2 " style="--bs-bg-opacity:.09
+            " >
+              CUSTOMER
+                </div>
+
+                <div class=" d-flex align-items-center justify-content-start column-gap-3 px-4 py-4">
+                  <div class="pfp-l bg-info rounded-5 d-flex align-items-center justify-content-center fw-bold">DB</div>
+                  <div>
+                    <div class="fs-6 fw-semibold">Douglas Batubo</div>
+                    <div class="custom-text text-secondary">Prospective Owner or Resident</div>
+                  </div>
+                </div>
+              </div>
+
+              <div class=" py-3 overflow-y-scroll  offcanvas-details js-offcavas-details">
+                  
+                <div>
+                  <div class="custom-text-sm text-secondary bg-secondary px-4 py-1 fw-medium my-2 " style="--bs-bg-opacity:.09
+            " >
+              KYC DETAILS
+                  </div>
+              
+                  <div class="px-4">
+                    <div class="d-flex justify-content-between align-items-center py-2">
+                      <p class="fs-6 text-secondary">Contact:</p>
+                      <p class="">08042786359</p>
+                    </div>
+
+                    <div class="d-flex justify-content-between align-items-center py-2">
+                      <p class="fs-6 text-secondary">Email:</p>
+                      <p class="">douglasbatubo@gmail.com</p>
+                    </div>
+
+                    <div class="d-flex justify-content-between align-items-center py-2">
+                      <p class="fs-6 text-secondary">Gender:</p>
+                      <p class="">Male</p>
+                    </div>
+
+                    <div class="d-flex justify-content-between align-items-center py-2">
+                      <p class="fs-6 text-secondary">Profession:</p>
+                      <p class="">Software Engineer</p>
+                    </div>
+
+                    <div class="d-flex justify-content-between align-items-center py-2">
+                      <p class="fs-6 text-secondary">Guarantor:</p>
+                      <p class="">Dukobo Amadi</p>
+                    </div>
+
+                  </div>
+
+
+                  <div class="custom-text-sm text-secondary bg-secondary px-4 py-1 fw-medium my-3 " style="--bs-bg-opacity:.09
+          " >
+            ID CARD - NIN OR VOTER’S CARD
+                  </div>
+
+
+                  <div class="px-4 ">
+                      <div class="gallery-item bg-info rounded-3">
+
+                      </div>
+                  </div>
+              </div>
+
+                  
+              </div>
+          </div>
+
+        </div>
+      </div>
+  </main>
+
+
+  
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+  <script src="./assets/js/main.js" type="module"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+<!-- 
+<div class="offcanvas offcanvas-end show " tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+        <div class="w-100 p-4 border-bottom border-1">
+          <div class="offcanvas-header p-0 mb-1">
+          <div class="d-flex justify-content-between align-items-center w-100">
+            <h5 class="offcanvas-title fw-semibold" id="offcanvasRightLabel">3 Bedroom Apartment</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+ 
+          </div>
+
+          <div class="mb-3">
+              <p class="custom-text text-secondary fw-medium">Filled interest/KYC form on April 26th, 2025</p>
+
+          </div>
+
+          <div class="d-flex justify-content-start p-1 px-2 column-gap-2 align-items-center rounded-3 bg-primary " style="--bs-bg-opacity:.07; width: 200px;">
+                <img src="./assets/icons/info.svg" alt="info-icon" width="17px">
+
+                <div class="text-primary custom-text">
+                  Status: House Available
+                </div>
+          </div>
+        </div>
+        
+        <div class="offcanvas-body p-0">
+          <div class="border-bottom border-1 d-flex align-items-center justify-content-between px-4 ">
+            <div class="p-3 text-center flex-fill border-bottom fw-medium border-3 border-primary custom-text pointer js-offcanvas-opt">House Details</div>
+            <div class="p-3 flex-fill  text-center custom-text fw-normal pointer js-offcanvas-opt">KYC Details</div>
+          </div>
+
+            <div class="offcanvas-container">
+              <div class=" overflow-x-scroll px-4 py-3 d-flex align-items-center  column-gap-3 offcanvas-gallery border-bottom border-1 mb-4">
+                <div class=" bg-secondary rounded-3" style=" width: 140px; height: 70px; min-width: 140px;"></div>
+                <div class=" bg-secondary rounded-3" style=" width: 140px; height: 70px; min-width: 140px;"></div>
+                <div class=" bg-secondary rounded-3" style=" width: 140px; height: 70px; min-width: 140px;"></div>
+                
+              </div>
+
+
+              <div class="custom-text-sm text-secondary bg-secondary px-4 py-1 fw-medium " style="--bs-bg-opacity:.09
+              " >
+                CUSTOMER
+              </div>
+
+
+              <div class="px-4 py-3 overflow-y-scroll  offcanvas-details js-offcavas-details">
+                  <div class="d-flex justify-content-between align-items-center">
+                        <div class="d-flex align-items-center column-gap-3 justify-content-start  py-2">
+                      <div class="rounded-2 d-flex align-items-center justify-content-center p-2  bg-secondary" style="--bs-bg-opacity:.14;">
+                        <img src="./assets/icons/building.svg" alt="building icon" width="24px">
+                      </div>
+                      
+                      <div>
+                        <div class=" fw-semibold fs-6">N10,000,000</div>
+                        <div class="custom-text">Rental price</div>
+                      </div>
+                      </div>
+
+                      <div>
+                        <img src="./assets/icons/more-2-line.svg" alt="more icon" >
+                      </div>
+                  </div>
+
+                  <div class="d-flex justify-content-between align-items-center">
+                        <div class="d-flex align-items-center column-gap-3 justify-content-start  py-2">
+                      <div class="rounded-2 d-flex align-items-center justify-content-center p-2  bg-secondary" style="--bs-bg-opacity:.14;">
+                        <img src="./assets/icons/layer.svg" alt="building icon" width="24px">
+                      </div>
+                      
+                      <div>
+                        <div class=" fw-semibold fs-6">4 Rooms</div>
+                        <div class="custom-text">No. of Bedroom</div>
+                      </div>
+                      </div>
+
+                      <div>
+                        <img src="./assets/icons/more-2-line.svg" alt="more icon" >
+                      </div>
+                  </div>
+
+                  <div class="d-flex justify-content-between align-items-center">
+                        <div class="d-flex align-items-center column-gap-3 justify-content-start  py-2">
+                      <div class="rounded-2 d-flex align-items-center justify-content-center p-2  bg-secondary" style="--bs-bg-opacity:.14;">
+                        <img src="./assets/icons/brush.svg" alt="building icon" width="24px">
+                      </div>
+                      
+                      <div>
+                        <div class=" fw-semibold fs-6">4 Bathrooms</div>
+                        <div class="custom-text">No. of Bathrooms</div>
+                      </div>
+                      </div>
+
+                      <div>
+                        <img src="./assets/icons/more-2-line.svg" alt="more icon" >
+                      </div>
+                  </div>
+
+                  <div class="d-flex justify-content-between align-items-center">
+                        <div class="d-flex align-items-center column-gap-3 justify-content-start  py-2">
+                      <div class="rounded-2 d-flex align-items-center justify-content-center p-2  bg-secondary" style="--bs-bg-opacity:.14;">
+                        <img src="./assets/icons/building.svg" alt="building icon" width="24px">
+                      </div>
+                      
+                      <div>
+                        <div class=" fw-semibold fs-6">3 Cars</div>
+                        <div class="custom-text">Garage spaceBathrooms</div>
+                      </div>
+                      </div>
+
+                      <div>
+                        <img src="./assets/icons/more-2-line.svg" alt="more icon" >
+                      </div>
+                  </div>
+
+                  
+              </div>
+            </div>
+        </div>
+</div> -->
